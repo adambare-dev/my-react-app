@@ -1,74 +1,94 @@
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
 
-body {
-   
-    background-color: #c3c0c0;
-}
+ body {
 
-.toDoContainer {
-    width: 20rem;
-    border: 1px solid;
-    padding: 1rem;
-    margin: 5rem auto;
-    background-color: white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+     background-color: #f0efef;
+ }
 
-}
+ .toDoContainer {
+     width: 22rem;
+     border-radius: .5rem;
+     padding: 1.5rem;
+     margin: 5rem auto;
+     background-color: white;
+     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+     text-align: center;
 
-.toDoContainer h1 {
-    margin-bottom: 2rem;
-    color: #0e283b;
-}
+ }
 
-.toDoContainer input {
-    padding: .4rem 1rem;
-    font-size: 1rem;
-    border-radius: .5rem;
-}
+ .toDoContainer h2 {
+     margin: 2rem auto;
+     color: #1d8fe1;
+ }
 
-.toDoContainer .inputs button {
-    padding: .4rem 1rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    background: #0077cc;
-    font-weight: 600;
-    color: wheat;
-    border-radius: .5rem;
-    cursor: pointer;
+ .toDoContainer input {
+     padding: .4rem 1rem;
+     font-size: 1rem;
+     border-radius: .5rem;
+ }
 
-}
+ .toDoContainer .inputs button {
+     padding: .5rem 1.25rem;
+     margin-top: 1.25rem;
+     margin-bottom: 1.25rem;
+     background: #0077cc;
+     font-weight: 600;
+     color: wheat;
+     border-radius: .5rem;
+     cursor: pointer;
+     border: none;
+
+ }
+
+ .toDoContainer .inputs button:hover {
+     transition: 0.3s ease-in;
+     opacity: .7;
+ }
 
 
-.toDoContainer ul li {
-    display: flex;
-    justify-content: space-between;
-    padding: .4rem;
-    background-color: #c3c0c0;
-    margin: 1rem;
+ .toDoContainer ul li {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: .4rem 1.25rem;
+     /*  background-color: #f0eded; */
+     background: rgba(0, 0, 0, 0.1);
+     margin: 1.5rem 0;
+ }
 
-}
+ .toDoContainer ul li span {
+     margin-top: .5rem;
+ }
 
-.toDoContainer ul li span {
-    margin-top: .5rem;
-}
+ .toDoContainer ul li button {
+     cursor: pointer;
+     height: 20px;
+     margin-top: .5rem;
 
-.toDoContainer ul li button {
-    cursor: pointer;
-    height: 20px;
-    margin-top: .5rem;
+ }
 
-}
+ .toDoContainer ul li input {
+     margin-top: .5rem;
 
-.toDoContainer ul li input {
-    margin-top: .5rem;
+ }
 
-}
+ .done {
+     text-decoration: line-through;
+     opacity: .6;
+ }
 
-.toDoContainer ul li .done {
-    text-decoration: line-through;
-} 
+ .deltebtn {
+     font-size: 1.5rem;
+     color: red;
+     font-weight: 700;
+     cursor: pointer;
+ }
+
+ .deltebtn:hover {
+     transition: 0.3s ease-in;
+     opacity: .5;
+ }

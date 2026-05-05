@@ -1,7 +1,7 @@
 //import './todoApp.css'
 import "./myTodo.css"
 import { useState } from "react";
-function TodoApp() {
+function Task_tracker() {
     //=== Componant Logic ===
     const [tasks, setTasks] = useState([]);
     const [myInput, setInput] = useState('');
@@ -13,12 +13,13 @@ function TodoApp() {
         } else {
             const newTask = {
                 txt: myInput,
-                id: new Date().getSeconds(),
+                id: Date.now(),
                 complited: false
             };
-            setTasks([...tasks, newTask]);
+            setTasks(prev => ([...prev, newTask]));
+            // setTasks([...tasks, newTask]);
             setInput('');
-        }
+        };
     };
 
     //delte task function
@@ -30,17 +31,25 @@ function TodoApp() {
     };
 
     //toggle task
+    /*  function toogleTask(id) {
+         setTasks(tasks.map((task) => {
+             if (task.id === id)
+                 return { ...task, complited: !task.complited };
+             task;
+         }));
+     }; */
     function toogleTask(id) {
         setTasks(tasks.map((task) => {
-            if (task.id === id)
+            if (task.id === id) {
                 return { ...task, complited: !task.complited };
-            task;
-        }))
-    };
+            }
+            return task; // ✅ this was missing
+        }));
+    }
     // === Componant UI === 
     return (
         <div className="toDoContainer">
-            <h1>hell react</h1>
+            <h2>task tracker app</h2>
 
             <div className="inputs">
                 <input type="text"
@@ -53,9 +62,11 @@ function TodoApp() {
             <ul>
                 {tasks.map((task) => {
                     return <li key={task.id} className={task.complited ? "done" : ""}>
-                        <input type="checkbox" onClick={() => toogleTask(task.id)} />
+                        <input type="checkbox" onClick={() => toogleTask(task.id)}
+                            title={task.complited ? "undo" : "mark as read"} />
                         <span>{task.txt}</span>
-                        <button onClick={() => delteTask(task.id)} title="do you want to remove this task">❌</button>
+                        <small onClick={() => delteTask(task.id)} title="do you want to remove this task" className="deltebtn">&times;</small>
+
                     </li>
                 })}
             </ul>
@@ -66,6 +77,6 @@ function TodoApp() {
 
 };
 
-export default TodoApp
+export default Task_tracker;
 
 

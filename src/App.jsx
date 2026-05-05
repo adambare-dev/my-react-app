@@ -1,14 +1,16 @@
 
 import React from 'react'
-import TodoApp from './TodoApp'
-import F_Coponant from './F-Coponant'
+
+import Task_tracker from './Task-tarcker'
+
 
 function App() {
   return (
     <>
-        <F_Coponant />
+      <Task_tracker />
+      {/*   <F_Coponant /> */}
     </>
-   
+
   )
 }
 
