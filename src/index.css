@@ -1,0 +1,45 @@
+/* * {
+    padding: 0;
+    margin: 0;
+}
+
+.LoggedIn {
+    background-color: green;
+    color: white;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.NoLogg {
+    background-color: rgb(255, 5, 5);
+    color: white;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.profiles {
+    display: flex;
+    gap: 1rem;
+    margin: 3rem auto;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+
+}
+
+.cards img {
+    width: 300px;
+    height: 270px;
+    object-fit: cover;
+
+}
+
+.cards {
+    text-align: center;
+}
+
+.dark {
+    background-color: black;
+    height: 100vh;
+} */

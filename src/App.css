@@ -1,0 +1,70 @@
+ul {
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.cont {
+    width: 350px;
+    margin: 3rem auto;
+  border: 1px solid #bbb;
+    padding: 1.25rem;
+    border-radius: .5rem;
+
+}
+
+.cont h2 {
+    margin-bottom: 2rem;
+
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+
+    border-bottom: 1px solid #bbb;
+    box-shadow: 0 2px 2px rgba(52, 51, 51, 0.142);
+    padding: .5rem;
+
+
+
+}
+
+.cont p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cont input {
+    padding: .4rem .8rem;
+    margin-top: 1.25rem;
+    border-radius: .5rem;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background-color: hsla(120, 96%, 45%, 0.929);
+    color: wheat;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.cont small {
+    font-size: 1.1rem;
+    padding: .5rem;
+
+}
+
+ul button {
+    cursor: pointer;
+    background-color: red;
+    padding: .4rem 1rem;
+    border-radius: .4rem;
+    font-weight: 600;
+}
+
+.input-grup {
+    text-align: center;
+    
+}

@@ -1,0 +1,74 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    background-color: #c3c0c0;
+}
+
+.toDoContainer {
+    width: 20rem;
+    border: 1px solid;
+    padding: 1rem;
+    margin: 5rem auto;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.toDoContainer h1 {
+    margin-bottom: 2rem;
+    color: #0e283b;
+}
+
+.toDoContainer input {
+    padding: .4rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.toDoContainer .inputs button {
+    padding: .4rem 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    background: #0077cc;
+    font-weight: 600;
+    color: wheat;
+    border-radius: .5rem;
+    cursor: pointer;
+
+}
+
+
+.toDoContainer ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem;
+    background-color: #c3c0c0;
+    margin: 1rem;
+
+}
+
+.toDoContainer ul li span {
+    margin-top: .5rem;
+}
+
+.toDoContainer ul li button {
+    cursor: pointer;
+    height: 20px;
+    margin-top: .5rem;
+
+}
+
+.toDoContainer ul li input {
+    margin-top: .5rem;
+
+}
+
+.toDoContainer ul li .done {
+    text-decoration: line-through;
+} 
