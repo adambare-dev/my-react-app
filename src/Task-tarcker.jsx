@@ -43,7 +43,7 @@ function Task_tracker() {
             if (task.id === id) {
                 return { ...task, complited: !task.complited };
             }
-            return task; // ✅ this was missing
+            return task;
         }));
     }
     // === Componant UI === 
