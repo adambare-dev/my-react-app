@@ -54,7 +54,7 @@ function Task_tracker() {
             <div className="inputs">
                 <input type="text"
                     value={myInput}
-                    placeholder="enter task..."
+                    placeholder="enter task"
                     onChange={(e) => setInput(e.target.value)} />
                 <button onClick={addTask}>Add task</button>
             </div>
