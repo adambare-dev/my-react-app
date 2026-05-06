@@ -62,7 +62,7 @@ function Task_tracker() {
             <ul>
                 {tasks.map((task) => {
                     return <li key={task.id} className={task.complited ? "done" : ""}>
-                        <input type="checkbox" onClick={() => toogleTask(task.id)}
+                        <input type="checkbox" onChange={() => toogleTask(task.id)}
                             title={task.complited ? "undo" : "mark as read"} />
                         <span>{task.txt}</span>
                         <small onClick={() => delteTask(task.id)} title="do you want to remove this task" className="deltebtn">&times;</small>
