@@ -70,8 +70,14 @@ function Task_tracker() {
                     </li>
                 })}
             </ul>
-            <p>task number: {tasks.length}</p>
 
+            {/* <p>{tasks.length < 1 ? "no task yet" : tasks.length + "" + " tasks"}</p> */}
+            <p className="task-tracker-footer-text">
+                {tasks.length === 0
+                    ? "No tasks yet"
+                    : tasks.length === 1 ? " 1 task remaining" :
+                        `${tasks.length} tasks remaining`}
+            </p>
         </div>
     );
 
