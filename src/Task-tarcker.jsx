@@ -1,4 +1,6 @@
 //import './todoApp.css'
+import { FaTrash } from "react-icons/fa";
+
 import "./myTodo.css"
 import { useState } from "react";
 function Task_tracker() {
@@ -65,7 +67,7 @@ function Task_tracker() {
                         <input type="checkbox" onChange={() => toogleTask(task.id)}
                             title={task.complited ? "undo" : "mark as read"} />
                         <span>{task.txt}</span>
-                        <small onClick={() => delteTask(task.id)} title="do you want to remove this task" className="deltebtn">&times;</small>
+                        <small onClick={() => delteTask(task.id)} title="do you want to remove this task" className="deltebtn"><FaTrash /></small>
 
                     </li>
                 })}
