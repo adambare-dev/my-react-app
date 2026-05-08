@@ -25,7 +25,6 @@ function Task_tracker() {
     };
 
     //delte task function
-
     function delteTask(id) {
         setTasks(tasks.filter((task) => {
             return task.id !== id;
