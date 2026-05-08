@@ -25,10 +25,16 @@ function Task_tracker() {
     };
 
     //delte task function
+    /*   function delteTask(id) {
+          setTasks(tasks.filter((task) => {
+              return task.id !== id;
+          }));
+      }; */
+    //updated version of delete task function
     function delteTask(id) {
-        setTasks(tasks.filter((task) => {
+        setTasks(prev => prev.filter((task) => {
             return task.id !== id;
-        }));
+        }))
     };
 
     //toggle task

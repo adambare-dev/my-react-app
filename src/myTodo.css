@@ -37,13 +37,29 @@
      padding: .6rem 1.5rem;
      margin-top: 1.25rem;
      margin-bottom: 1.25rem;
-     background: #0077cc;
+     /*initial backgrounf= background: #0077cc */
+     background: #0077bbff;
      font-weight: 650;
      color: wheat;
      border-radius: .5rem;
      cursor: pointer;
      border: none;
 
+ }
+
+ @media (max-width: 48rem) {
+     .inputs button {
+         font-size: 1.1rem;
+         padding: .7rem 2rem;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .inputs button {
+         font-size: 1.2rem;
+         padding: .8rem;
+         width: 100%;
+     }
  }
 
  .toDoContainer .inputs button:hover {
