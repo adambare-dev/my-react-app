@@ -52,7 +52,13 @@ function Task_tracker() {
             }
             return task;
         }));
+    };
+    function hundlekeyDown(e) {
+        if (e.key === "Enter") {
+           addTask();
+        }
     }
+
     // === Componant UI === 
     return (
         <div className="toDoContainer">
@@ -62,7 +68,8 @@ function Task_tracker() {
                 <input type="text"
                     value={myInput}
                     placeholder="enter task"
-                    onChange={(e) => setInput(e.target.value)} />
+                    onChange={(e) => setInput(e.target.value)}
+                    onKeyDown={hundlekeyDown} />
                 <button onClick={addTask}>Add task</button>
             </div>
 
