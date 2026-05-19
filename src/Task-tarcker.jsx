@@ -1,11 +1,15 @@
 //import './todoApp.css'
 import { FaTrash } from "react-icons/fa";
+import { FaTrashAlt } from "react-icons/fa";
 
 import "./myTodo.css"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 function Task_tracker() {
     //=== Componant Logic ===
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("Task")) || []);
+    useEffect(() => {
+        localStorage.setItem("Task", JSON.stringify(tasks));
+    }, [tasks])
     const [myInput, setInput] = useState('');
 
     //Addding Task function
@@ -55,7 +59,7 @@ function Task_tracker() {
     };
     function hundlekeyDown(e) {
         if (e.key === "Enter") {
-           addTask();
+            addTask();
         }
     }
 
@@ -79,7 +83,7 @@ function Task_tracker() {
                         <input type="checkbox" onChange={() => toogleTask(task.id)}
                             title={task.complited ? "undo" : "mark as read"} />
                         <span>{task.txt}</span>
-                        <small onClick={() => delteTask(task.id)} title="do you want to remove this task" className="deltebtn"><FaTrash /></small>
+                        <FaTrashAlt onClick={() => delteTask(task.id)} title="do you want to remove this task" className="deltebtn" />
 
                     </li>
                 })}

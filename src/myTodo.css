@@ -74,8 +74,31 @@
      align-items: center;
      padding: .4rem 1.25rem;
      /*  background-color: #f0eded; */
-     background: rgba(0, 0, 0, 0.1);
+     /* background: rgba(0, 0, 0, 0.1); */
+     background: #ffff;
      margin: 1.5rem 0;
+     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0..05), 0 2px 4px -1px rgba(0, 0, 0, 0..05);
+     border: 1px solid #f0f0f0;
+ }
+
+
+
+
+
+ /* pasrt 2 */
+ .toDoContainer ul li {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: .4rem 1.25rem;
+     /*  background-color: #f0eded; */
+     /* background: rgba(0, 0, 0, 0.1); */
+     /*  background: #ffff;
+     margin: 1.5rem 0;
+     box-shadow: 0 4px 6px -1px rgba(0,0,0,0..05),0 2px 4px -1px rgba(0,0,0,0..05);
+     border: 1px solid #f0f0f0; */
+     background: #f4f7f9;
+     border-left: 4px solid #0087cc;
  }
 
  .toDoContainer ul li span {
@@ -100,16 +123,16 @@
  }
 
  .deltebtn {
-     font-size: 1.15rem;
-     color: #e74c3c;
+     font-size: 1.5rem;
+     color: #0087cc;
      /*  color: #7f8c8d; */
-
      cursor: pointer;
      margin-top: .2rem;
      padding-top: .2rem;
  }
 
  .deltebtn:hover {
+     color: orangered;
      transition: 0.3s ease-in;
      opacity: .5;
  }
